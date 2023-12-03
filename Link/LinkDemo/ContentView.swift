@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  SwiftUILinkDemo
+//  LinkDemo
 //
 //  Created by Kyle on 2023/11/28.
 //
