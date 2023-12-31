@@ -8,12 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var value = 20.0
     var body: some View {
+        VStack {
+            slider
+                .border(Color.red, width: 1)
+            Divider().padding()
+            slider
+                .sliderStyle(DemoSliderStyle())
+                .border(Color.green, width: 1)
+        }
+    }
+    
+    @State private var value = 20.0
+    
+    private var slider: some View {
         Slider(value: $value,
                in: 0.0 ... 100.0,
                step: 0.5) {
-            Text("Label")
+            Text("Hello")
         } minimumValueLabel: {
             Image(systemName: "light.min")
         } maximumValueLabel: {
